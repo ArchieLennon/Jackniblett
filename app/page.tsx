@@ -15,10 +15,6 @@ import {client} from '@/app/lib/sanity';
 // }
 
 
-
-
-
-
 async function getProjects(){
   const query = `*[type == posts]{
   title,
@@ -47,7 +43,7 @@ const data = await getProjects();
 
 
 // :Data[]
-console.log(data)
+// console.log(data)
 
   return (
 
