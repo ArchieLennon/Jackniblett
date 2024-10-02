@@ -1,11 +1,36 @@
 
+
 type propsType={
-    bodydata:any;
+
+    bodydata:{
+  map(arg0: (posts: any) => import("react").JSX.Element): import("react").ReactNode | Iterable<import("react").ReactNode>;
+  title: string;
+  _id: string;
+  heading: string;
+  body: string;
+  links: string;
+    }
+     
+    
+
 }
 
 
-export default function Links(props:(propsType)){
 
+
+
+// type propsType={
+
+    
+    
+    
+
+
+// }
+
+
+export default function Links(props:propsType){
+    
     return(
 
         <>

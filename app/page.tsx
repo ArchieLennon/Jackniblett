@@ -6,13 +6,13 @@ import {client} from '@/app/lib/sanity';
 
 
 
-interface Data {
-  title: string;
-  _id: string;
-  heading: string;
-  body: string;
-  links: string;
-}
+// interface Data {
+//   title: string;
+//   _id: string;
+//   heading: string;
+//   body: string;
+//   links: string;
+// }
 
 
 
@@ -43,8 +43,10 @@ export const revalidate = 60;
 
 export default async function Home() {
 
-const data:Data[] = await getProjects();
+const data = await getProjects();
 
+
+// :Data[]
 console.log(data)
 
   return (
