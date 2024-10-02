@@ -46,7 +46,7 @@ export default function Links({bodydata}:propsType){
             <div key={bodydata._id}>
 
 
-            {bodydata.body?<p  className="mb-5  w-96">{bodydata.body}</p>:null}
+            {bodydata.body?<p  className="mb-5 w-50 md:w-96 lg:w-96 ">{bodydata.body}</p>:null}
 
           </div>
 
