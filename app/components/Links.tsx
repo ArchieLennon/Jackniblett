@@ -2,13 +2,33 @@
 
 import Link from 'next/link';
 
-type propsType={
-    linkdata:any;
+interface Data {
+
+    title: string;
+    _id: string;
+    heading: string;
+    body: string;
+    links: string;
+    name: string;
+
 }
 
 
 
-export default function Links(props:(propsType)){
+
+
+
+
+
+
+
+interface propsType{
+    linkdata:Data[]
+}
+
+
+
+export default function Links({linkdata}:propsType){
 
     return(
 
@@ -19,11 +39,11 @@ export default function Links(props:(propsType)){
             <Link href="https://fontsinuse.com/type_designers/9293/jack-niblett" className="hover:text-gray-600">Fonts In Use</Link><br></br>
             </div>
 
-{props.linkdata?.map((posts:any) => (
+{linkdata?.map((linkdata) => (
 
 
-            <div key={posts._id}>
-                {posts.links?<Link href={posts.links} className="hover:text-gray-600">{posts.links}</Link>:null}<br></br>
+            <div key={linkdata._id}>
+                {linkdata.links?<Link href={linkdata.links} className="hover:text-gray-600">{linkdata.links}</Link>:null}<br></br>
 
 
             </div>

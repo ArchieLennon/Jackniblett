@@ -5,6 +5,7 @@ interface Data {
   heading: string;
   body: string;
   links: string;
+  name: string;
 }
 
 
